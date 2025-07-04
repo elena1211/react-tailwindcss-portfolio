@@ -27,7 +27,6 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 -   Projects filter by category
 -   Projects filter by search
 -   Smooth scroll
--   Counter
 -   Dynamic forms
 -   Back to top button
 -   Download file button
