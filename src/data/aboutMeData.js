@@ -1,14 +1,18 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Career changer from event planning to software engineering, currently pursuing an MSc in Computer Science at Queen Mary University of London. I specialise in Python, JavaScript, and full-stack web development using React and Django.',
+		bio: 'MSc Computer Science (conversion), Queen Mary University of London',
 	},
 	{
 		id: 2,
-		bio: 'I’m passionate about creating delightful user experiences that are both functional and engaging. My current focus is developing a gamified productivity app that helps users achieve goals with adaptive scheduling and rewarding progress systems.',
+		bio: ' A career switcher from events manager to software engineering. Bring 5+ years of experience in project planning, stakeholder management, and cross-functional execution from the creative and live-event industry.',
 	},
 	{
-	id: 3,
-	bio: 'I am actively seeking software engineering roles starting from September 2025.',
-}
+		id: 3,
+		bio: 'Currently developing a gamified productivity web app for the MSc dissertation. Actively seeking junior or mid-level software engineering roles starting September 2025.',
+	},
+	{
+		id: 4,
+		bio: 'Skills: React, JavaScript, Tailwind, Python, Django, PostgreSQL, Git, GitHub'
+	}
 ];
