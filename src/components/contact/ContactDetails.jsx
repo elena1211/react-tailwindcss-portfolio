@@ -1,45 +1,78 @@
-import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
-
-const contacts = [
-	{
-		id: 1,
-		name: 'Your Address, Your City, Your Country',
-		icon: <FiMapPin />,
-	},
-	{
-		id: 2,
-		name: 'email@domain.com',
-		icon: <FiMail />,
-	},
-	{
-		id: 3,
-		name: '555 8888 888',
-		icon: <FiPhone />,
-	},
-];
+import {
+  HiOutlineDocumentText,
+  HiOutlineMail,
+  HiOutlineLocationMarker,
+  HiOutlineBriefcase,
+  HiOutlineCode
+} from 'react-icons/hi';
 
 const ContactDetails = () => {
-	return (
-		<div className="w-full lg:w-1/2">
-			<div className="text-left max-w-xl px-6">
-				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
-					Contact details
-				</h2>
-				<ul className="font-general-regular">
-					{contacts.map((contact) => (
-						<li className="flex " key={contact.id}>
-							<i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
-								{contact.icon}
-							</i>
-							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
-								{contact.name}
-							</span>
-						</li>
-					))}
-				</ul>
-			</div>
-		</div>
-	);
+  return (
+	 <section className="container mx-auto px-4 py-12">
+      <div className="grid md:grid-cols-2 gap-12">
+        {/* 左側介紹區 */}
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">Let's work together</h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+            I'm currently open to software engineering roles in the UK starting September 2025.
+            If you'd like to collaborate or have an opportunity to discuss, feel free to reach out.
+          </p>
+    <div className="space-y-4">
+      {/* 📍 Location */}
+      <a
+        href="https://www.google.com/maps/place/London,+UK"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition text-gray-800 dark:text-gray-100"
+      >
+        <HiOutlineLocationMarker className="text-xl" />
+        <span>London, UK</span>
+      </a>
+      {/* 📧 Email */}
+      <a
+        href="mailto:elena.yychiang@gmail.com"
+        className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition text-gray-800 dark:text-gray-100"
+      >
+        <HiOutlineMail className="text-xl" />
+        <span>elena.yychiang@gmail.com</span>
+      </a>
+
+      {/* 💼 LinkedIn */}
+      <a
+        href="https://www.linkedin.com/in/yiying-chiang/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition text-gray-800 dark:text-gray-100"
+      >
+        <HiOutlineBriefcase className="text-xl" />
+        <span>LinkedIn Profile</span>
+      </a>
+
+      {/* 💻 GitHub */}
+      <a
+        href="https://github.com/elena1211"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition text-gray-800 dark:text-gray-100"
+      >
+        <HiOutlineCode className="text-xl" />
+        <span>GitHub Profile</span>
+      </a>
+
+      {/* 📄 CV */}
+      <a
+        href="/files/elena_chiang_cv.pdf"
+        download
+        className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition text-gray-800 dark:text-gray-100"
+      >
+        <HiOutlineDocumentText className="text-xl" />
+        <span>CV</span>
+      </a>
+    </div>
+      </div>
+      </div>
+  </section>
+  );
 };
 
 export default ContactDetails;
