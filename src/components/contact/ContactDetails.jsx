@@ -10,7 +10,6 @@ const ContactDetails = () => {
   return (
 	 <section className="container mx-auto px-4 py-12">
       <div className="grid md:grid-cols-2 gap-12">
-        {/* 左側介紹區 */}
         <div>
           <h2 className="text-3xl font-semibold mb-4">Let's work together</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">

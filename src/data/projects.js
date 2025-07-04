@@ -9,13 +9,13 @@ import UIImage2 from '../images/ui-project-2.jpg';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
+		title: 'Gamified Productivity App',
 		category: 'Web Application',
 		img: WebImage2,
 		ProjectHeader: {
-			title: 'Project Management UI - From Context',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			title: 'Gamified Productivity App',
+			publishDate: 'Sep 2025',
+			tags: 'React / Django / PostgreSQL',
 		},
 	},
 	{
