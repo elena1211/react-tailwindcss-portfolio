@@ -5,6 +5,7 @@ import CovidImage from '../images/covid_dashboard.png';
 export const projectsData = [
   {
     id: 1,
+    slug: 'levelup',
     title: 'LevelUp',
     category: 'Web Application',
     img: LevelUpImage,
@@ -16,6 +17,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    slug: 'covid',
     title: 'COVID-19 Dashboard',
     category: 'Data Analytics',
     img: CovidImage,
