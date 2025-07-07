@@ -1,6 +1,7 @@
 // Import images
 import LevelUpImage from '../images/levelup.png';
 import CovidImage from '../images/covid_dashboard.png';
+import AlzheimersImage from '../images/alzheimers_ui.png';
 
 export const allProjectDetails = {
   levelup: {
@@ -124,6 +125,74 @@ export const allProjectDetails = {
           id: 2,
           details:
             'Designing a clean UI in Jupyter using widgets while keeping code modular and data-responsive.',
+        },
+      ],
+      SocialSharingHeading: 'Share This',
+      SocialSharing: [],
+    },
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [],
+    },
+  },
+
+  alzheimers: {
+    ProjectHeader: {
+      title: "Alzheimer's Disease Support Application (UX/UI Demo)",
+      publishDate: 'Jan 2025',
+      tags: 'Figma, UI/UX Design, Accessibility, Group Project',
+    },
+    ProjectImages: [
+      {
+        id: 1,
+        title: 'Alzheimer App UI',
+        img: AlzheimersImage,
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Project Overview',
+      CompanyInfo: [
+        {
+          id: 1,
+          title: 'Type',
+          details: 'Group Project (UX/UI Coursework)',
+        },
+        {
+          id: 2,
+          title: 'Role',
+          details: 'UI Designer & Interaction Planner',
+        },
+        {
+          id: 3,
+          title: 'Figma',
+          details: 'https://www.figma.com/proto/VfjIbmtJBrHyVjnM76dEAD/Interactive-System-Design---D?node-id=32-316&p=f&t=4K72XAbj02ScwOXj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=32%3A316', 
+        },
+      ],
+      ObjectivesHeading: 'Objective',
+      ObjectivesDetails:
+        'To design a user-friendly and emotionally sensitive application that supports caregivers and patients with Alzheimer’s Disease. The goal was to deliver intuitive features such as memory games, schedule management, and emergency contacts through accessible UI.',
+      Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: ['Figma', 'Team Collaboration', 'Accessibility Principles'],
+        },
+      ],
+      ProjectDetailsHeading: 'Highlights',
+      ProjectDetails: [
+        {
+          id: 1,
+          details:
+            'Led the UI layout design process in Figma and conducted peer reviews on accessibility features.',
+        },
+        {
+          id: 2,
+          details:
+            'Designed with empathy in mind: font size, colour contrast, and iconography were tailored for elderly users.',
+        },
+        {
+          id: 3,
+          details:
+            'Collaborated closely with developers and testers to translate concept into prototype-ready wireframes.',
         },
       ],
       SocialSharingHeading: 'Share This',

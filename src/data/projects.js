@@ -1,6 +1,7 @@
 // Import images
 import LevelUpImage from '../images/levelup.png';
 import CovidImage from '../images/covid_dashboard.png';
+import AlzheimersImage from '../images/alzheimers_ui.png';
 
 export const projectsData = [
   {
@@ -27,5 +28,16 @@ export const projectsData = [
       tags: 'Python / Jupyter / Pandas / Matplotlib',
     },
   },
-  // ...其他專案
+  {
+    id: 3,
+    slug: 'alzheimers',
+    title: "Alzheimer's Disease Support Application",
+    category: 'UI/UX Design',
+    img: AlzheimersImage,
+    ProjectHeader: {
+      title: "Alzheimer's Disease Support Application (UX/UI Demo)",
+      publishDate: 'Jan 2025',
+      tags: 'Figma / UI/UX Design / Accessibility',
+    },
+  },
 ];
