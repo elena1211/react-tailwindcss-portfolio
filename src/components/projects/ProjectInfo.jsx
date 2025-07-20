@@ -13,36 +13,66 @@ const ProjectInfo = ({ info }) => {
 
 	return (
 		<div className="block sm:flex gap-0 sm:gap-10 mt-14">
+			{/* Left Column */}
 			<div className="w-full sm:w-1/3 text-left">
 				{/* Client Info */}
 				<div className="mb-7">
 					<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
 						{ClientHeading}
 					</p>
-					<ul className="leading-loose">
-						{CompanyInfo.map((info) => (
-							<li
-								className="font-general-regular text-ternary-dark dark:text-ternary-light"
-								key={info.id}
-							>
-								<span>{info.title}: </span>
-								<a
-									href={
-										info.title === 'Website'
-											? info.details
-											: undefined
-									}
-									className={
-										info.title === 'Website' || info.title === 'Phone'
-											? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
-											: ''
-									}
-									aria-label="Project Website or Phone"
-								>
-									{info.details}
-								</a>
-							</li>
-						))}
+					<ul className="leading-loose space-y-2">
+						{CompanyInfo.map((item) => {
+							const isLink = ['Website', 'GitHub', 'Figma', 'CW1 PDF', 'CW2 PDF', 'Analysis Report'].includes(item.title);
+							const isPhone = item.title === 'Phone';
+
+							return (
+								<li key={item.id} className="break-words">
+									<span className="text-ternary-dark dark:text-ternary-light">
+										{item.title}:{' '}
+									</span>
+
+									{isLink ? (
+										<a
+											href={item.details}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="!text-blue-600 !underline hover:!text-blue-800 dark:!text-blue-400 dark:hover:!text-blue-200 transition-colors duration-300"
+											style={{ 
+												color: '#2563eb',
+												textDecoration: 'underline'
+											}}
+										>
+											{item.title === 'GitHub' && item.details.includes('github.com')
+												? 'View on GitHub'
+												: item.title === 'Figma' && item.details.includes('figma.com')
+												? 'View Figma Prototype'
+												: item.title === 'CW1 PDF'
+												? 'View CW1 Report (PDF)'
+												: item.title === 'CW2 PDF'
+												? 'View CW2 Report (PDF)'
+												: item.title === 'Analysis Report'
+												? 'View Analysis Report (PDF)'
+												: item.details}
+										</a>
+									) : isPhone ? (
+										<a
+											href={`tel:${item.details}`}
+											className="!text-blue-600 !underline hover:!text-blue-800 dark:!text-blue-400 dark:hover:!text-blue-200 transition-colors duration-300"
+											style={{ 
+												color: '#2563eb',
+												textDecoration: 'underline'
+											}}
+										>
+											{item.details}
+										</a>
+									) : (
+										<span className="text-ternary-dark dark:text-ternary-light">
+											{item.details}
+										</span>
+									)}
+								</li>
+							);
+						})}
 					</ul>
 				</div>
 
@@ -77,8 +107,9 @@ const ProjectInfo = ({ info }) => {
 								<a
 									key={social.id}
 									href={social.url}
-									target="__blank"
-									aria-label="Share Project"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`Share on ${social.name}`}
 									className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
 								>
 									<span className="text-lg lg:text-2xl">{social.icon}</span>
@@ -89,7 +120,7 @@ const ProjectInfo = ({ info }) => {
 				)}
 			</div>
 
-			{/* Right column - Project Details */}
+			{/* Right Column: Project Details */}
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 				<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
 					{ProjectDetailsHeading}

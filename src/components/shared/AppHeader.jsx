@@ -3,7 +3,7 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+import logoDark from '../../images/logo-dark.png';
 import { motion } from 'framer-motion';
 
 const AppHeader = () => {
@@ -34,13 +34,13 @@ const AppHeader = () => {
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
-									src={logoDark}
+									src={logoLight}
 									className="w-36"
-									alt="Dark Logo"
+									alt="Light Logo"
 								/>
 							) : (
 								<img
-									src={logoLight}
+									src={logoDark}
 									className="w-36"
 									alt="Dark Logo"
 								/>

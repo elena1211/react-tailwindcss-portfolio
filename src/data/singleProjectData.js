@@ -2,6 +2,8 @@
 import LevelUpImage from '../images/levelup.png';
 import CovidImage from '../images/covid_dashboard.png';
 import AlzheimersImage from '../images/alzheimers_ui.png';
+import TodoImage from '../images/todo.png';
+import DataAnalyticsImage from '../images/data_analytics.png';
 
 export const allProjectDetails = {
   levelup: {
@@ -193,6 +195,165 @@ export const allProjectDetails = {
           id: 3,
           details:
             'Collaborated closely with developers and testers to translate concept into prototype-ready wireframes.',
+        },
+      ],
+      SocialSharingHeading: 'Share This',
+      SocialSharing: [],
+    },
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [],
+    },
+  }, 
+  todo: {
+    ProjectHeader: {
+      title: 'To-do List CLI App',
+      publishDate: 'Jan 2025',
+      tags: 'Python, File I/O, CLI',
+    },
+    ProjectImages: [
+      {
+        id: 1,
+        title: 'Terminal View of To-do App',
+        img: TodoImage,
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Project Overview',
+      CompanyInfo: [
+        {
+          id: 1,
+          title: 'Type',
+          details: 'Python Practice Project',
+        },
+        {
+          id: 2,
+          title: 'GitHub',
+          details:
+            'https://github.com/elena1211/QMUL_practice/blob/main/Python-practice/To-do%20list.py',
+        },
+      ],
+      ObjectivesHeading: 'Objective',
+      ObjectivesDetails:
+        'To build a lightweight command-line task manager that supports basic task operations like add, insert, remove, and mark complete, with data stored in a text file.',
+      Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: ['Python', 'File I/O', 'Loops', 'Functions'],
+        },
+      ],
+      ProjectDetailsHeading: 'Highlights',
+      ProjectDetails: [
+        {
+          id: 1,
+          details:
+            'Supports dynamic task list with insert, remove, and mark-as-done functionality.',
+        },
+        {
+          id: 2,
+          details:
+            'Uses file read/write to persist tasks between sessions using `tasks.txt`.',
+        },
+        {
+          id: 3,
+          details:
+            'Demonstrates structured code using functions and modular logic.',
+        },
+      ],
+      SocialSharingHeading: 'Share This',
+      SocialSharing: [],
+    },
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [],
+    },
+  },
+  dataanalytics: {
+    ProjectHeader: {
+      title: 'UK Software Industry & Employee Attrition Analytics',
+      publishDate: 'Apr 2025',
+      tags: 'Python, Pandas, Matplotlib, Scikit-learn, Bayesian Network',
+    },
+    ProjectImages: [
+      {
+        id: 1,
+        title: 'Top 10 Industries Bar Chart',
+        img: DataAnalyticsImage,
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Project Overview',
+      CompanyInfo: [
+        {
+          id: 1,
+          title: 'Type',
+          details: 'Coursework Project (CW1 & CW2)',
+        },
+        {
+          id: 2,
+          title: 'Reports',
+          details: 'See PDF reports below',
+        },
+        {
+          id: 3,
+          title: 'CW1 PDF',
+          details:
+            'https://github.com/elena1211/QMUL_practice/blob/main/Data%20Analytics/240165475_Yi-Ying_Chiang_data%20analytics_CW1.pdf',
+        },
+        {
+          id: 4,
+          title: 'CW2 PDF',
+          details:
+            'https://github.com/elena1211/QMUL_practice/blob/main/Data%20Analytics/CW2_240165475_YIYING%20CHIANG.pdf',
+        },
+        {
+          id: 5,
+          title: 'Analysis Report',
+          details:
+            'https://github.com/elena1211/QMUL_practice/blob/main/Data%20Analytics/UK_Industry_ProgrammingLang_Analysis.pdf',
+        },
+      ],
+      ObjectivesHeading: 'Objective',
+      ObjectivesDetails:
+        'To analyse UK software industry trends and employee attrition using supervised (Random Forest) and unsupervised (K-means) machine learning, along with Bayesian Networks for causal discovery.',
+      Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: [
+            'Python',
+            'Pandas',
+            'Matplotlib',
+            'Scikit-learn',
+            'Bayesian Network (GeNIe)',
+          ],
+        },
+      ],
+      ProjectDetailsHeading: 'Key Contributions',
+      ProjectDetails: [
+        {
+          id: 1,
+          details:
+            'Analysed Stack Overflow survey data (n=3,224) to identify UK industries hiring software developers and their preferred programming languages.',
+        },
+        {
+          id: 2,
+          details:
+            'Used Random Forest classifier to predict developer industry based on language usage, achieving 41% accuracy and identifying top predictive languages.',
+        },
+        {
+          id: 3,
+          details:
+            'Implemented K-means clustering to reveal developer skill groupings across industries.',
+        },
+        {
+          id: 4,
+          details:
+            'Used Bayesian Network models to analyse causal structure behind employee attrition based on HR dataset from Kaggle.',
+        },
+        {
+          id: 5,
+          details:
+            'Compared performance of structure learning algorithms (HC, GES, SaiyanH) and evaluated DAG fit using BIC, SHD, F1.',
         },
       ],
       SocialSharingHeading: 'Share This',

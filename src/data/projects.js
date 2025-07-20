@@ -2,13 +2,15 @@
 import LevelUpImage from '../images/levelup.png';
 import CovidImage from '../images/covid_dashboard.png';
 import AlzheimersImage from '../images/alzheimers_ui.png';
+import TodoImage from '../images/todo.png';
+import DataAnalyticsImage from '../images/data_analytics.png';
 
 export const projectsData = [
   {
     id: 1,
     slug: 'levelup',
     title: 'LevelUp',
-    category: 'Web Application',
+    category: 'Web Development',
     img: LevelUpImage,
     ProjectHeader: {
       title: 'LevelUp - Gamified Productivity App',
@@ -38,6 +40,30 @@ export const projectsData = [
       title: "Alzheimer's Disease Support Application (UX/UI Demo)",
       publishDate: 'Jan 2025',
       tags: 'Figma / UI/UX Design / Accessibility',
+    },
+  },
+  {
+    id: 4,
+    slug: 'todo',
+    title: 'To-do List CLI App',
+    category: 'Web Development',
+    img: TodoImage,
+    ProjectHeader: {
+      title: 'To-do List CLI App',
+      publishDate: 'Jan 2025',
+      tags: 'Python / CLI / File I/O',
+    },
+  },
+  {
+    id: 5,
+    slug: 'dataanalytics',
+    title: 'Data Analytics Coursework',
+    category: 'Data Analytics',
+    img: DataAnalyticsImage,
+    ProjectHeader: {
+      title: 'UK Software Industry & Attrition Analysis',
+      publishDate: 'Apr 2025',
+      tags: 'Pandas / Matplotlib / Random Forest / K-means / BN',
     },
   },
 ];
