@@ -4,6 +4,7 @@ import CovidImage from '../images/covid_dashboard.png';
 import AlzheimersImage from '../images/alzheimers_ui.png';
 import TodoImage from '../images/todo.png';
 import DataAnalyticsImage from '../images/data_analytics.png';
+import JobTrackerImage from '../images/job_tracker.png';
 
 export const allProjectDetails = {
   levelup: {
@@ -354,6 +355,74 @@ export const allProjectDetails = {
           id: 5,
           details:
             'Compared performance of structure learning algorithms (HC, GES, SaiyanH) and evaluated DAG fit using BIC, SHD, F1.',
+        },
+      ],
+      SocialSharingHeading: 'Share This',
+      SocialSharing: [],
+    },
+    RelatedProject: {
+      title: 'Related Projects',
+      Projects: [],
+    },
+  },
+  jobtracker: {
+    ProjectHeader: {
+      title: 'Job Tracker - Application Management Tool',
+      publishDate: 'Jul 2025',
+      tags: 'React, TailwindCSS, localStorage, Vite',
+    },
+    ProjectImages: [
+      {
+        id: 1,
+        title: 'Job Tracker UI',
+        img: JobTrackerImage,
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Project Overview',
+      CompanyInfo: [
+        {
+          id: 1,
+          title: 'Type',
+          details: 'Personal Project',
+        },
+        {
+          id: 2,
+          title: 'Live Demo',
+          details: 'https://job-tracker-phi-six.vercel.app/',
+        },
+        {
+          id: 3,
+          title: 'GitHub',
+          details: 'https://github.com/elena1211/job-tracker',
+        },
+      ],
+      ObjectivesHeading: 'Objective',
+      ObjectivesDetails:
+        'To create a fully responsive, interactive tool to track job applications with support for adding, deleting, filtering, and status management—all in a modern UI.',
+      Technologies: [
+        {
+          title: 'Tools & Technologies',
+          techs: ['React', 'TailwindCSS', 'Vite', 'localStorage'],
+        },
+      ],
+      ProjectDetailsHeading: 'Highlights',
+      ProjectDetails: [
+        {
+          id: 1,
+          details: 'Supports adding and removing job entries with state persistence.',
+        },
+        {
+          id: 2,
+          details: 'Built responsive and modern UI with TailwindCSS and dark mode support.',
+        },
+        {
+          id: 3,
+          details: 'Prepared for filtering and editing extensions.',
+        },
+        {
+          id: 4,
+          details: 'Deployed via Vercel with custom domain and automatic updates.',
         },
       ],
       SocialSharingHeading: 'Share This',

@@ -4,6 +4,7 @@ import CovidImage from '../images/covid_dashboard.png';
 import AlzheimersImage from '../images/alzheimers_ui.png';
 import TodoImage from '../images/todo.png';
 import DataAnalyticsImage from '../images/data_analytics.png';
+import JobTrackerImage from '../images/job_tracker.png';
 
 export const projectsData = [
   {
@@ -64,6 +65,18 @@ export const projectsData = [
       title: 'UK Software Industry & Attrition Analysis',
       publishDate: 'Apr 2025',
       tags: 'Pandas / Matplotlib / Random Forest / K-means / BN',
+    },
+  },
+  {
+    id: 6,
+    slug: 'jobtracker',
+    title: 'Job Tracker App',
+    category: 'Web Development',
+    img: JobTrackerImage,
+    ProjectHeader: {
+      title: 'Job Tracker - Application Management Tool',
+      publishDate: 'Jul 2025',
+      tags: 'React / TailwindCSS / localStorage',
     },
   },
 ];
