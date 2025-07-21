@@ -2,6 +2,8 @@
 
 🌟 A personal portfolio to showcase my transition from events management into software engineering.
 
+![Preview](./elena_portfolio.png)
+
 ## 🔗 Live Site
 
 👉 [https://elena-portfolio-amber.vercel.app/](https://elena-portfolio-amber.vercel.app/)
