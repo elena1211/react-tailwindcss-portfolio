@@ -13,7 +13,7 @@ const ContactDetails = () => {
         <div>
           <h2 className="text-3xl font-semibold mb-4">Let's work together</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            I'm currently open to software engineering roles in the UK starting September 2025.
+            I'm open to software engineering roles in the UK.
             If you'd like to collaborate or have an opportunity to discuss, feel free to reach out.
           </p>
     <div className="space-y-4">

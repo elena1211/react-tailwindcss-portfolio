@@ -9,7 +9,7 @@ export const aboutMeData = [
 	},
 	{
 		id: 3,
-		bio: 'My current focus is web development, particularly building interactive tools with React and TailwindCSS. For my MSc dissertation, I am developing a gamified productivity application that integrates adaptive task scheduling and RPG-style progression mechanics, aimed at improving motivation through visual feedback and behavioural design.',
+		bio: 'My current focus is full-stack web development, building interactive tools with React, Django and PostgreSQL. For my MSc dissertation, I built LevelUp, a gamified productivity application that integrates adaptive task scheduling and RPG-style progression mechanics, aimed at improving motivation through visual feedback and behavioural design.',
 	},
 	{
 		id: 4,
@@ -17,6 +17,6 @@ export const aboutMeData = [
 	},
 	{
 		id: 5,
-		bio: 'Currently seeking junior or mid-level software engineering roles (frontend or full-stack) from September 2025 onwards.',
+		bio: 'Open to junior or mid-level software engineering roles (frontend or full-stack) in the UK.',
 	}
 ];

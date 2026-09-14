@@ -10,7 +10,7 @@
 
 ## 🎯 About Me
 
-I'm a career switcher currently pursuing an MSc in Computer Science (conversion) at Queen Mary University of London. With 5+ years of experience in event planning and stakeholder coordination, I now bring those skills into software engineering—particularly frontend development and interactive tools.
+I'm a career switcher with an MSc in Computer Science (conversion) from Queen Mary University of London. With 5+ years of experience in event planning and stakeholder coordination, I now bring those skills into software engineering—particularly frontend development and interactive tools.
 
 This site highlights projects that span full-stack development, data analysis, UX design, and productivity applications.
 
