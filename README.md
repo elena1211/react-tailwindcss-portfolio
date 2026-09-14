@@ -1,5 +1,7 @@
 # Elena Chiang — Portfolio Website
 
+> **This portfolio has moved.** The current site is https://elena-chiang-portfolio.vercel.app and its source is https://github.com/elena1211/elena-chiang-portfolio. This repository is no longer maintained, and the old address redirects to the new site.
+
 🌟 A personal portfolio to showcase my transition from events management into software engineering.
 
 ![Preview](./elena_portfolio.png)

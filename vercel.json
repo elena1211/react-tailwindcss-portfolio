@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "https://elena-chiang-portfolio.vercel.app/#about",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "https://elena-chiang-portfolio.vercel.app/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:path*",
+      "destination": "https://elena-chiang-portfolio.vercel.app/#work",
+      "permanent": true
+    },
+    {
+      "source": "/files/elena_chiang_cv.pdf",
+      "destination": "https://elena-chiang-portfolio.vercel.app/elena-chiang-cv.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://elena-chiang-portfolio.vercel.app/",
+      "permanent": true
+    }
+  ]
+}
